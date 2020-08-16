@@ -12,14 +12,14 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.post('/api/logs', async (req, res, next) => {
+router.post('/', async (req, res, next) => {
   try {
     const logEntry = new LogEntry(req.body);
     const createdLog = await logEntry.save();
     res.json(createdLog);
   } catch (error) {
     if (error.name === 'ValidationError') {
-      req.status(422);
+      res.status(422);
     }
     next(error);
   }

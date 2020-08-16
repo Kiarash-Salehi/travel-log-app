@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "build": "cd client && npm run build",
+    "insyall-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && mpn run build"
   },
   "keywords": [],
   "author": "Kiarash",

@@ -1,0 +1,41 @@
+.LogEntryForm {
+  cursor: default;
+}
+
+.LogEntryForm__form {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.LogEntryForm__error {
+  text-align: center;
+  border: 1px solid #111;
+  background-color: rgb(255, 35, 35);
+}
+
+.LogEntryForm__form label {
+  margin: .5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LogEntryForm__input {
+  width: 60%;
+}
+
+.LogEntryForm__button {
+  margin: .2rem auto;
+  display: block;
+  outline: 1px #333;
+  border: 0;
+  background-color: rgb(33, 23, 41);
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.LogEntryForm__button:hover {
+  opacity: .9;
+}

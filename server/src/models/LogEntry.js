@@ -30,7 +30,7 @@ const logEntrySchema = new Schema({
     min: -180,
     max: 180
   },
-  vistDate: {
+  visitDate: {
     type: Date,
     required: true
   }
