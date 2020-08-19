@@ -8,8 +8,9 @@
     "dev": "nodemon src/index.js",
     "lint": "eslint src/",
     "build": "cd client && npm run build",
-    "insyall-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && mpn run build"
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "deploy": "git add -A && git commit -am \"Forth time trying to deploy to heroku\" && git push heroku master"
   },
   "keywords": [],
   "author": "Kiarash",
