@@ -9,7 +9,7 @@
     "lint": "eslint src/",
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
+    "heroku-postbuild": "cd client && npm install && run build",
     "deploy": "git add -A && git commit -am \"Forth time trying to deploy to heroku\" && git push heroku master"
   },
   "keywords": [],
