@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "lint": "eslint src/",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client",
     "deploy": "git add -A && git commit -am \"Sixth time trying to deploy to heroku\" && git push heroku master"
   },
@@ -22,9 +21,6 @@
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "eslint": "^7.6.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
     "nodemon": "^2.0.4"
   }
 }

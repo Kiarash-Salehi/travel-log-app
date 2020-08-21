@@ -1,0 +1,13 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [{
+    "src": "compass.svg",
+    "type": "image/svg",
+    "sizes": "52x52"
+  }],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
