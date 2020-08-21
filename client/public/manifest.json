@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Travel log entry app",
+  "name": "Travel log entry application",
   "icons": [{
     "src": "compass.svg",
     "type": "image/svg",

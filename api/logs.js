@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 const { Router } = require('express');
 const router = Router();
-const LogEntry = require('../models/logEntry');
+const LogEntry = require('../models/LogEntry');
 
 router.get('/', async (req, res, next) => {
   try {
