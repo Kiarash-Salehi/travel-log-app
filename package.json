@@ -11,7 +11,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "deploy": "git add -A && git commit -am \"Sixth time trying to deploy to heroku\" && git push heroku master"
+    "deploy": "git add -A && git commit -am \"12th time trying to deploy to heroku\" && git push heroku master"
   },
   "keywords": [],
   "author": "Kiarash",
@@ -19,6 +19,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "helmet": "^4.0.0",
     "mongoose": "^5.9.28",
     "morgan": "^1.10.0"

@@ -1,5 +1,6 @@
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 const express = require('express');
+const favicon = require('express-favicon');
 
 const app = express();
 const morgan = require('morgan');
@@ -18,15 +19,15 @@ mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-if (process.env.NODE_ENV !== 'production') {
+app.use(favicon(__dirname + '/client/public/favicon.ico'));
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(__dirname));
   app.use(express.static(__dirname + '/client/build'));
-  app.get('*', (req, res) => {
+  app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
   });
 }
 app.use('/', logsRouter);
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
-app.listen(process.env.PORT, () => {
-  console.log('connected');
-});
+app.listen(process.env.PORT);
