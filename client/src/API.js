@@ -1,4 +1,4 @@
-const API_URL = 'https://travel-log-mern-stack.herokuapp.com/';
+const API_URL = 'https://travel-log-application-server.herokuapp.com';
 
 export async function listEntryLogs() {
     const response = await fetch(API_URL);
